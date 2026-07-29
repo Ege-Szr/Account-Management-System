@@ -1,7 +1,8 @@
 import re
-from database import add_account,update_account,delete_account,show_users_information
 import time
+from database import Database
 
+my_database=Database()
 
 def My_Sign_Up():
           
@@ -34,14 +35,14 @@ def My_Sign_Up():
                     exception=Exception("password is unacceptable")
                     raise exception
             print("account created")
-            return add_account(account_mail,account_password)
+            return my_database.add_account(account_mail,account_password)
     except Exception as e:
         print(e)
 
 def My_Sign_In():
     mail=input("Email address: ")
     password=input("Password: ")
-    result=show_users_information(mail,password)
+    result=my_database.show_users_information(mail,password)
 
     return result
 
@@ -65,7 +66,7 @@ while True:
     elif choice=="3":
         now_mail=input("Email address:")
         now_password=input("Password:")
-        result=show_users_information(now_mail,now_password)
+        result=my_database.show_users_information(now_mail,now_password)
 
 
         if "were found" in result:
@@ -82,14 +83,14 @@ while True:
             if choice=="1":
                 new_mail=input("Enter new email address:")
                 if re.fullmatch(mail_pattern,new_mail) and len(new_mail)>=10:
-                    print(update_account(now_mail,now_password,new_mail,None))
+                    print(my_database.update_account(now_mail,now_password,new_mail,None))
                 else:
                     print("Sorry, email address information could not be updated")
  
             elif choice=="2":
                 new_password=input("Enter new password:")
                 if re.fullmatch(password_pattern,new_password):
-                    print(update_account(now_mail,now_password,None,new_password))
+                    print(my_database.update_account(now_mail,now_password,None,new_password))
                 else:
                     print("Sorry, password information could not be updated")
 
@@ -97,7 +98,7 @@ while True:
                 new_mail=input("Enter new email address:")
                 new_password=input("Enter new pasword:")
                 if re.fullmatch(mail_pattern,new_mail) and re.fullmatch(password_pattern,new_password) and len(new_password)>=3:
-                    print(update_account(now_mail,now_password,new_mail,new_password))
+                    print(my_database.update_account(now_mail,now_password,new_mail,new_password))
                 else:
                     print("Sorry, email and password information could not be updated")
 
@@ -113,17 +114,17 @@ while True:
     elif choice=="4":
         mail=input("Email address: ")
         password=input("Password: ")
-        result=show_users_information(mail,password)
+        result=my_database.show_users_information(mail,password)
 
-        if result:
-            print(delete_account(mail,password))
+        if  "were found" in result:
+            print(my_database.delete_account(mail,password))
         else:
             print("No account found to delete")
 
     elif choice=="5":
         mail=input("Email address: ")
         password=input("Password: ")
-        result=show_users_information(mail,password)
+        result=my_database.show_users_information(mail,password)
 
         print(result)
 
