@@ -65,11 +65,9 @@ Account-Management-System/
 |    ├── Menu.png
 |    ├── sign_up.png
 |    ├── sign_in.png
-|    ├──update_account_1.png
+|    ├── update_account_1.png
 |    ├── update_account_2.png
-|    ├── delete_account.png
 |    ├── show_user_information.png
-|    └── exit_program.png
 ├──README.md 
 └──requirements.txt            
 ```
@@ -96,38 +94,35 @@ python main.py
 
 -> After the running the program,a "Welcome to the menu" message and available options will be displayed.
 
-<img src="image/Menu.png" width="500">
+<img src="image/Menu.png" width="350">
 
 
 ### Sign up 
 
-<img src="image/sign_up.png" width="500">
+-> Users can create a new account by entering a valid email address and password.
+
+<img src="image/sign_up.png" width="350">
 
 
 ### Sign in
 
-![Sign in](image/sign_in.png)
+-> Users can log in with their registered email and password.
+
+<img src="image/sign_in.png" width="350">
 
 
 ### Update Account
 
-<img src="image/update_account_1.png" width="500"> <img  
-src="image/update_account_2.png" width="500">
+-> Users can update their email, password, or both after verifying their current password.
 
-
-### Delete Account
-
-<img src="image/delete_account.png" width="500">
+<img src="image/update_account_1.png" width="350"> <img src="image/update_account_2.png" width="350">
 
 
 ### Show User Information
 
-<img src="image/show_user_information.png" width="500">
+-> Users can view their stored account information after verifying their credentials.
 
-
-### Exit 
-
-<img src="image/exit_program.png" width="500">
+<img src="image/show_user_information.png" width="350">
 
 ## Security Notes
 
