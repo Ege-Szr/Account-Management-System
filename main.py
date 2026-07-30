@@ -45,6 +45,7 @@ def My_Sign_In():
     mail=input("Email address: ")
     password=input("Password: ")
     result=my_database.show_users_information(mail,password)
+    print("You can sign in")
 
     return result
 

@@ -3,11 +3,17 @@
 This project is an **Account Management System** developed using the Python programming language and an SQLite database, enabling users to manage their accounts. 
 
 In this **Account Management System**, users can perform the following actions:
-- Sign up (create a new account)
-- Sign in (log into their account)
-- Update account information (email or password or both of them)
-- Delete their account
-- Show user information (showing email and password information)
+-> Sign up (create a new account)
+-> Sign in (log into their account)
+-> Update account information (email or password or both of them)
+-> Delete their account
+-> Show user information (showing email and password information)
+
+## Requirements
+
+-> Python 3.14.0
+-> Requirements.txt
+
 
 ## Installation
 
@@ -23,7 +29,13 @@ git clone https://github.com/Ege-Szr/Account-Management-System
 cd Account-Management-System
 ```
 
-3) ### Run the project
+3) ### Install dependencies
+
+```bash
+pip install -r Requirements.txt
+```
+
+4) ### Run the project
 
 ```bash
 python main.py
@@ -33,34 +45,44 @@ python main.py
 
 --->**Python 3.14.0**
 
---->**SQlite3**
+--->**SQLite3**
 
 --->**Regular Expression Module(re)**
 
 --->**time Module**
+
+--->**bcrypt**
 
 ## Project Structure
 
 ```
 Account-Management-System/
 |
-├──main.py                  -> Main application logic and user input handling
-├──database.py              -> All database operations 
-├──Accounts_Information.db  -> Stores users email and password information
+├──main.py                  
+├──database.py               
+├──Accounts_Information.db  
 ├──image/
-|    └──Menu.png                       
-└── README.md               -> Documentation of Account Management System
+|    ├── Menu.png
+|    ├── sign_up.png
+|    ├── sign_in.png
+|    ├──update_account_1.png
+|    ├── update_account_2.png
+|    ├── delete_account.png
+|    ├── show_user_information.png
+|    └── exit_program.png
+├──README.md 
+└──requirements.txt            
 ```
 
 ## Project Features
 
-- User sign up with input validation
-- User login system
-- Update user account information
-- User account deletion functionality
-- Email and password validation using Regular Expressions (re)
-- Data storage using SQLite database
-- Error handling using try-except blocks
+-> User sign up with input validation
+-> User login system
+-> Update user account information
+-> User account deletion functionality
+-> Email and password validation using Regular Expressions (re)
+-> Data storage using SQLite database
+-> Error handling using try-except blocks
 
 ## How to use 
 
@@ -75,6 +97,45 @@ python main.py
 -> After the running the program,a "Welcome to the menu" message and available options will be displayed.
 
 ![Main Menu](image/Menu.png)
+
+
+### Sign up 
+
+![Sign up](image/sign_up.png)
+
+
+### Sign in
+
+![Sign in](image/sign_in.png)
+
+
+### Update Account
+
+![Update Account](image/update_account_1.png)   
+
+![Update Account](image/update_account_2.png)
+
+
+### Delete Account
+
+![Delete Account](iamge/delete_account.png)
+
+
+### Show User Information
+
+![Show User Information](image/show_user_information.png)
+
+
+### Exit 
+
+![Exit](image/exit.program.png)
+
+## Security Notes
+
+-> Passwords are hashed with bcrypt before being stored.
+-> Email and password inputs are validated with regex patterns.
+-> Database enforces unique email addresses.
+
 
 
 
