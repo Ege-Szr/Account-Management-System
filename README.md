@@ -127,7 +127,9 @@ python main.py
 ## Security Notes
 
 -> Passwords are hashed with bcrypt before being stored.
+
 -> Email and password inputs are validated with regex patterns.
+
 -> Database enforces unique email addresses.
 
 
