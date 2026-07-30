@@ -96,12 +96,12 @@ python main.py
 
 -> After the running the program,a "Welcome to the menu" message and available options will be displayed.
 
-![Main Menu](image/Menu.png)
+<img src="image/Menu.png" width="500">
 
 
 ### Sign up 
 
-![Sign up](image/sign_up.png)
+<img src="image/sign_up.png" width="500">
 
 
 ### Sign in
@@ -111,24 +111,23 @@ python main.py
 
 ### Update Account
 
-![Update Account](image/update_account_1.png)   
-
-![Update Account](image/update_account_2.png)
+<img src="image/update_account_1.png" width="500"> <img  
+src="image/update_account_2.png" width="500">
 
 
 ### Delete Account
 
-![Delete Account](iamge/delete_account.png)
+<img src="image/delete_account.png" width="500">
 
 
 ### Show User Information
 
-![Show User Information](image/show_user_information.png)
+<img src="image/show_user_information.png" width="500">
 
 
 ### Exit 
 
-![Exit](image/exit.program.png)
+<img src="image/exit_program.png" width="500">
 
 ## Security Notes
 
