@@ -138,7 +138,7 @@ class Database:
             my_stored_hash=find_Accounts[2]
            
             if bcrypt.checkpw(password.encode("utf-8"),my_stored_hash.encode("utf-8")):
-                return f"Email address : {find_Accounts[1]} , password : {find_Accounts[2]} were found "
+                return f"Email address : {find_Accounts[1]} , password : {password} were found "
             else:
                 print("Sorry")
 
