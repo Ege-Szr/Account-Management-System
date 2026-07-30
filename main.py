@@ -1,6 +1,7 @@
 import re
 import time
 from database import Database
+import bcrypt
 
 my_database=Database()
 
@@ -34,8 +35,9 @@ def My_Sign_Up():
                 else:
                     exception=Exception("password is unacceptable")
                     raise exception
+            my_hashed_password=bcrypt.hashpw(account_password.encode("utf-8"),bcrypt.gensalt()).decode("utf-8")
             print("account created")
-            return my_database.add_account(account_mail,account_password)
+            return my_database.add_account(account_mail,my_hashed_password)
     except Exception as e:
         print(e)
 
