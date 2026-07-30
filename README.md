@@ -117,7 +117,7 @@ python main.py
 
 ### Sign in
 
--> Users can log in with their registered email and password.
+-> Users can sign in with their registered email and password.
 
 <img src="image/sign_in.png" width="350">
 
