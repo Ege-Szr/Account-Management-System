@@ -4,14 +4,19 @@ This project is an **Account Management System** developed using the Python prog
 
 In this **Account Management System**, users can perform the following actions:
 -> Sign up (create a new account)
+
 -> Sign in (log into their account)
+
 -> Update account information (email or password or both of them)
+
 -> Delete their account
+
 -> Show user information (showing email and password information)
 
 ## Requirements
 
 -> Python 3.14.0
+
 -> Requirements.txt
 
 
@@ -75,11 +80,17 @@ Account-Management-System/
 ## Project Features
 
 -> User sign up with input validation
+
 -> User login system
+
 -> Update user account information
+
 -> User account deletion functionality
+
 -> Email and password validation using Regular Expressions (re)
+
 -> Data storage using SQLite database
+
 -> Error handling using try-except blocks
 
 ## How to use 
